@@ -59,7 +59,7 @@ const Faq: React.FC = () => {
 
   return (
     <section id="faq" className="relative py-24 overflow-hidden section-animate flex flex-col justify-center">
-      <div className="absolute inset-0 bg-hero-grid opacity-35 z-0"></div>
+      <div className="absolute inset-0 bg-hero-grid"></div>
       
       <div className="relative z-10 max-w-5xl mx-auto px-6 w-full">
         <div className="text-center mb-16">

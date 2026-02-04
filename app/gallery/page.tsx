@@ -50,7 +50,7 @@ const GalleryPage = () => {
     <div className="min-h-screen bg-white dark:bg-black">
       <Header />
       <section className="relative pt-40 pb-24 overflow-hidden">
-        <div className="absolute inset-0 bg-hero-grid opacity-20"></div>
+        <div className="absolute inset-0 bg-hero-grid"></div>
         <div className="max-w-7xl mx-auto px-6 relative z-10">
           <span className="text-brand-green font-black text-[10px] tracking-[0.4em] uppercase mb-6 inline-block bg-brand-green/10 px-4 py-2 rounded-full">{t('gallery.pre_title')}</span>
           <h1 className="text-6xl md:text-8xl font-black tracking-tighter leading-none mb-8">{t('gallery.title_part1')} <span className="text-brand-green">{t('gallery.title_part2')}</span></h1>

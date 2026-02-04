@@ -81,7 +81,7 @@ const Speakers: React.FC = () => {
 
   return (
     <section id="speakers" className="relative py-24 overflow-hidden section-animate flex flex-col justify-center">
-      <div className="absolute inset-0 bg-hero-grid opacity-40 z-0"></div>
+      <div className="absolute inset-0 bg-hero-grid"></div>
       <div className="absolute inset-0 bg-gradient-to-b from-white dark:from-black via-transparent to-white dark:to-black z-[1]"></div>
       
       <div className="relative z-10 max-w-7xl mx-auto px-6">

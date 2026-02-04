@@ -49,7 +49,7 @@ const Team: React.FC = () => {
 
   return (
     <section id="team" className="relative py-24 overflow-hidden section-animate">
-      <div className="absolute inset-0 bg-hero-grid opacity-35 z-0"></div>
+      <div className="absolute inset-0 bg-hero-grid"></div>
       <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">
         <div className="mb-20">
           <span className="text-brand-green font-black text-[10px] tracking-[0.4em] uppercase mb-5 px-6 py-2 rounded-full bg-brand-green/10 inline-block border border-brand-green/20">

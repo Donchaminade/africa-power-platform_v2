@@ -26,7 +26,7 @@ const Contact: React.FC = () => {
 
     return (
         <section id="contact" className="relative py-24 overflow-hidden section-animate flex flex-col justify-center bg-gray-50 dark:bg-gray-950">
-            <div className="absolute inset-0 bg-hero-grid opacity-25 z-0"></div>
+            <div className="absolute inset-0 bg-hero-grid"></div>
             <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
                 <span className="text-brand-green font-black text-[10px] tracking-[0.4em] uppercase mb-6 px-4 py-1.5 rounded-full bg-brand-green/10 inline-block">
                     {t('contact.pre_title')}

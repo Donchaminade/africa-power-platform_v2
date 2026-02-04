@@ -10,7 +10,7 @@ const Registration: React.FC = () => {
 
     return (
         <section id="register" className="relative py-24 overflow-hidden section-animate bg-gray-50 dark:bg-gray-950">
-            <div className="absolute inset-0 bg-hero-grid opacity-20 z-0"></div>
+            <div className="absolute inset-0 bg-hero-grid"></div>
             <div className="relative z-10 max-w-4xl mx-auto px-6 text-center">
                 <div className="w-20 h-20 bg-brand-green text-white rounded-3xl flex items-center justify-center mx-auto mb-8 text-3xl shadow-2xl shadow-brand-green/30 transform rotate-12">
                   <Ticket />

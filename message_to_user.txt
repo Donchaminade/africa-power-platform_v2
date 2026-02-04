@@ -1,25 +1,6 @@
-Oui, vous pouvez déployer sur Vercel, mais il faut d'abord que les modifications que nous avons apportées soient enregistrées dans votre dépôt Git.
+J'ai mis en place la barre de navigation en bas de l'écran pour la version mobile.
 
-Actuellement, votre `git status` montre des fichiers modifiés et non suivis dans le dossier `.next/dev/cache/turbopack/`. Ce sont des fichiers générés temporairement par Next.js, et ils ne doivent pas être commités dans Git (ils sont normalement ignorés par le fichier `.gitignore`).
+- Le menu plein écran a été remplacé par une barre de navigation qui apparaît en bas lorsque vous cliquez sur l'icône du menu.
+- J'ai ajouté des icônes pour les sections principales afin d'optimiser l'espace.
 
-Pour préparer votre projet au déploiement, vous devez d'abord commiter vos changements :
-
-1.  **Stager tous les fichiers modifiés :**
-    ```bash
-    git add .
-    ```
-    *(Cette commande ajoute tous les fichiers modifiés à l'index, en respectant votre fichier `.gitignore` pour ignorer les fichiers comme ceux du dossier `.next`.)*
-
-2.  **Créer un commit avec un message descriptif :**
-    ```bash
-    git commit -m "feat: Intégration complète des icônes Lucide React, mise à jour du logo/favicon, affichage correct du splash screen et de la section Hero, lien Bing Maps en dur temporaire"
-    ```
-
-3.  **Pousser vos changements vers votre dépôt distant (par exemple, GitHub) :**
-    ```bash
-    git push
-    ```
-
-Une fois que vos modifications sont poussées vers votre dépôt Git, vous pourrez connecter ce dépôt à Vercel pour le déploiement. Vercel détectera automatiquement votre projet Next.js et gérera la construction et le déploiement.
-
-Souhaitez-vous que j'exécute les commandes `git add .` et `git commit` pour vous ? Ensuite, vous pourrez faire le `git push` vous-même.
+Cette nouvelle disposition devrait grandement améliorer l'ergonomie sur mobile. Veuillez vérifier sur votre téléphone pour voir si le résultat vous convient.

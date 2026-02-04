@@ -5,12 +5,12 @@
 
 :root {
   --brand-primary: #00A859;
-  --grid-color: rgba(0, 168, 89, 0.4);
+  --grid-color: rgba(0, 168, 89, 0.1); /* Moins visible en mode clair */
   --grid-size: 80px;
 }
 
 .dark {
-  --grid-color: rgba(0, 168, 89, 0.6);
+  --grid-color: rgba(0, 168, 89, 0.2); /* Moins visible en mode sombre */
 }
 
 @layer base {

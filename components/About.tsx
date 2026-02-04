@@ -25,7 +25,7 @@ const About: React.FC = () => {
 
     <section id="about" className="relative py-24 overflow-hidden section-animate flex flex-col justify-center">
 
-      <div className="absolute inset-0 bg-hero-grid opacity-50 z-0"></div>
+      <div className="absolute inset-0 bg-hero-grid"></div>
 
       <div className="absolute inset-0 bg-gradient-to-b from-white dark:from-black via-transparent to-white dark:to-black z-[1]"></div>
 

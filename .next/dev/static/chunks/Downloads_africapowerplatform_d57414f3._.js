@@ -14,6 +14,10 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplat
 var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sun$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sun$3e$__ = __turbopack_context__.i("[project]/Downloads/africapowerplatform/node_modules/lucide-react/dist/esm/icons/sun.js [app-client] (ecmascript) <export default as Sun>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__ = __turbopack_context__.i("[project]/Downloads/africapowerplatform/node_modules/lucide-react/dist/esm/icons/menu.js [app-client] (ecmascript) <export default as Menu>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__ = __turbopack_context__.i("[project]/Downloads/africapowerplatform/node_modules/lucide-react/dist/esm/icons/x.js [app-client] (ecmascript) <export default as X>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$info$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Info$3e$__ = __turbopack_context__.i("[project]/Downloads/africapowerplatform/node_modules/lucide-react/dist/esm/icons/info.js [app-client] (ecmascript) <export default as Info>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__ = __turbopack_context__.i("[project]/Downloads/africapowerplatform/node_modules/lucide-react/dist/esm/icons/calendar.js [app-client] (ecmascript) <export default as Calendar>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__ = __turbopack_context__.i("[project]/Downloads/africapowerplatform/node_modules/lucide-react/dist/esm/icons/users.js [app-client] (ecmascript) <export default as Users>");
+var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$award$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Award$3e$__ = __turbopack_context__.i("[project]/Downloads/africapowerplatform/node_modules/lucide-react/dist/esm/icons/award.js [app-client] (ecmascript) <export default as Award>");
 var __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/Downloads/africapowerplatform/node_modules/next/image.js [app-client] (ecmascript)");
 ;
 var _s = __turbopack_context__.k.signature();
@@ -43,265 +47,254 @@ const Header = ()=>{
     const navLinks = [
         {
             href: '#about',
-            label: t('nav.about')
+            label: t('nav.about'),
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$info$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Info$3e$__["Info"], {}, void 0, false, {
+                fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
+                lineNumber: 23,
+                columnNumber: 52
+            }, ("TURBOPACK compile-time value", void 0))
         },
         {
             href: '#program',
-            label: t('nav.program')
+            label: t('nav.program'),
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$calendar$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Calendar$3e$__["Calendar"], {}, void 0, false, {
+                fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
+                lineNumber: 24,
+                columnNumber: 56
+            }, ("TURBOPACK compile-time value", void 0))
         },
         {
             href: '#speakers',
-            label: t('nav.speakers')
+            label: t('nav.speakers'),
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$users$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Users$3e$__["Users"], {}, void 0, false, {
+                fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
+                lineNumber: 25,
+                columnNumber: 58
+            }, ("TURBOPACK compile-time value", void 0))
         },
         {
             href: '#sponsors',
-            label: t('nav.sponsors')
+            label: t('nav.sponsors'),
+            icon: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$award$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Award$3e$__["Award"], {}, void 0, false, {
+                fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
+                lineNumber: 26,
+                columnNumber: 58
+            }, ("TURBOPACK compile-time value", void 0))
         }
     ];
-    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
-        className: `fixed top-0 left-0 w-full z-[100] transition-all duration-500 ${isScrolled ? 'py-3' : 'py-6'}`,
+    return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
-            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
-                className: "mx-auto max-w-[95%] 2xl:max-w-[1440px] px-2 sm:px-4",
-                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                    className: `flex items-center justify-between bg-white/90 dark:bg-black/95 backdrop-blur-2xl border border-gray-200/50 dark:border-white/10 rounded-full px-6 sm:px-10 py-3 shadow-2xl transition-all duration-500 ${isScrolled ? 'shadow-brand-green/20 scale-[0.98]' : ''}`,
-                    children: [
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                            href: "/",
-                            className: "flex items-center gap-4 group flex-shrink-0",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
-                                    src: "/assets/images/logo.png",
-                                    alt: "Africa Power Platform Logo",
-                                    width: 40,
-                                    height: 40,
-                                    className: "group-hover:rotate-[360deg] transition-transform duration-1000 ease-in-out"
-                                }, void 0, false, {
-                                    fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
-                                    lineNumber: 36,
-                                    columnNumber: 13
-                                }, ("TURBOPACK compile-time value", void 0)),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex flex-col group-hover:translate-x-1 transition-transform",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "hidden sm:block font-black text-xl lg:text-2xl tracking-tighter leading-none",
-                                            children: "Africa Power"
-                                        }, void 0, false, {
-                                            fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
-                                            lineNumber: 44,
-                                            columnNumber: 15
-                                        }, ("TURBOPACK compile-time value", void 0)),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                            className: "hidden sm:block text-brand-green font-black text-[10px] tracking-[0.4em] uppercase",
-                                            children: "Platform"
-                                        }, void 0, false, {
-                                            fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
-                                            lineNumber: 45,
-                                            columnNumber: 15
-                                        }, ("TURBOPACK compile-time value", void 0))
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
-                                    lineNumber: 43,
-                                    columnNumber: 13
-                                }, ("TURBOPACK compile-time value", void 0))
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
-                            lineNumber: 35,
-                            columnNumber: 11
-                        }, ("TURBOPACK compile-time value", void 0)),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                            className: "hidden lg:flex items-center justify-end flex-1 ml-10 gap-4 xl:gap-8",
-                            children: [
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex items-center gap-4 xl:gap-8",
-                                    children: navLinks.map((link)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                            href: link.href,
-                                            className: "text-[11px] font-black hover:text-brand-green transition-all relative group uppercase tracking-[0.2em] whitespace-nowrap",
-                                            children: [
-                                                link.label,
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                                    className: "absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-green transition-all duration-500 group-hover:w-full"
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("header", {
+                className: `fixed top-0 left-0 w-full z-[100] transition-all duration-500 ${isScrolled ? 'py-3' : 'py-6'}`,
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("nav", {
+                    className: "mx-auto max-w-[95%] 2xl:max-w-[1440px] px-2 sm:px-4",
+                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                        className: `flex items-center justify-between bg-white/90 dark:bg-black/95 backdrop-blur-2xl border border-gray-200/50 dark:border-white/10 rounded-full px-6 sm:px-10 py-3 shadow-2xl transition-all duration-500 ${isScrolled ? 'shadow-brand-green/20 scale-[0.98]' : ''}`,
+                        children: [
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                href: "/",
+                                className: "flex items-center gap-4 group flex-shrink-0",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        src: "/assets/images/logo.png",
+                                        alt: "Africa Power Platform Logo",
+                                        width: 40,
+                                        height: 40,
+                                        className: "group-hover:rotate-[360deg] transition-transform duration-1000 ease-in-out"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
+                                        lineNumber: 36,
+                                        columnNumber: 15
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex flex-col group-hover:translate-x-1 transition-transform",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "hidden sm:block font-black text-xl lg:text-2xl tracking-tighter leading-none",
+                                                children: "Africa Power"
+                                            }, void 0, false, {
+                                                fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
+                                                lineNumber: 44,
+                                                columnNumber: 17
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                className: "hidden sm:block text-brand-green font-black text-[10px] tracking-[0.4em] uppercase",
+                                                children: "Platform"
+                                            }, void 0, false, {
+                                                fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
+                                                lineNumber: 45,
+                                                columnNumber: 17
+                                            }, ("TURBOPACK compile-time value", void 0))
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
+                                        lineNumber: 43,
+                                        columnNumber: 15
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, void 0, true, {
+                                fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
+                                lineNumber: 35,
+                                columnNumber: 13
+                            }, ("TURBOPACK compile-time value", void 0)),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                className: "hidden lg:flex items-center justify-end flex-1 ml-10 gap-4 xl:gap-8",
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex items-center gap-4 xl:gap-8",
+                                        children: navLinks.map((link)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                href: link.href,
+                                                className: "text-[11px] font-black hover:text-brand-green transition-all relative group uppercase tracking-[0.2em] whitespace-nowrap",
+                                                children: [
+                                                    link.label,
+                                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                                        className: "absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-green transition-all duration-500 group-hover:w-full"
+                                                    }, void 0, false, {
+                                                        fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
+                                                        lineNumber: 54,
+                                                        columnNumber: 21
+                                                    }, ("TURBOPACK compile-time value", void 0))
+                                                ]
+                                            }, link.href, true, {
+                                                fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
+                                                lineNumber: 52,
+                                                columnNumber: 19
+                                            }, ("TURBOPACK compile-time value", void 0)))
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
+                                        lineNumber: 50,
+                                        columnNumber: 15
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "h-6 w-px bg-gray-200 dark:bg-gray-800 hidden xl:block"
+                                    }, void 0, false, {
+                                        fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
+                                        lineNumber: 59,
+                                        columnNumber: 15
+                                    }, ("TURBOPACK compile-time value", void 0)),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                                        className: "flex items-center gap-3",
+                                        children: [
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                onClick: toggleLanguage,
+                                                className: "text-[10px] font-black w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-brand-green hover:text-white transition-all uppercase flex items-center justify-center border border-transparent hover:border-brand-green/30",
+                                                children: language === 'fr' ? 'en' : 'fr'
+                                            }, void 0, false, {
+                                                fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
+                                                lineNumber: 62,
+                                                columnNumber: 17
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
+                                                onClick: toggleTheme,
+                                                className: "w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-brand-green hover:text-white transition-all text-sm border border-transparent hover:border-brand-green/30",
+                                                children: theme === 'light' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$moon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Moon$3e$__["Moon"], {
+                                                    size: 18
                                                 }, void 0, false, {
                                                     fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
-                                                    lineNumber: 54,
-                                                    columnNumber: 19
+                                                    lineNumber: 66,
+                                                    columnNumber: 40
+                                                }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sun$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sun$3e$__["Sun"], {
+                                                    size: 18
+                                                }, void 0, false, {
+                                                    fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
+                                                    lineNumber: 66,
+                                                    columnNumber: 61
                                                 }, ("TURBOPACK compile-time value", void 0))
-                                            ]
-                                        }, link.href, true, {
-                                            fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
-                                            lineNumber: 52,
-                                            columnNumber: 17
-                                        }, ("TURBOPACK compile-time value", void 0)))
-                                }, void 0, false, {
-                                    fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
-                                    lineNumber: 50,
-                                    columnNumber: 13
-                                }, ("TURBOPACK compile-time value", void 0)),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "h-6 w-px bg-gray-200 dark:bg-gray-800 hidden xl:block"
-                                }, void 0, false, {
-                                    fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
-                                    lineNumber: 59,
-                                    columnNumber: 13
-                                }, ("TURBOPACK compile-time value", void 0)),
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: "flex items-center gap-3",
-                                    children: [
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                            onClick: toggleLanguage,
-                                            className: "text-[10px] font-black w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-brand-green hover:text-white transition-all uppercase flex items-center justify-center border border-transparent hover:border-brand-green/30",
-                                            children: language === 'fr' ? 'en' : 'fr'
-                                        }, void 0, false, {
-                                            fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
-                                            lineNumber: 62,
-                                            columnNumber: 15
-                                        }, ("TURBOPACK compile-time value", void 0)),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                            onClick: toggleTheme,
-                                            className: "w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-brand-green hover:text-white transition-all text-sm border border-transparent hover:border-brand-green/30",
-                                            children: theme === 'light' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$moon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Moon$3e$__["Moon"], {
-                                                size: 18
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
-                                                lineNumber: 66,
-                                                columnNumber: 38
-                                            }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sun$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sun$3e$__["Sun"], {
-                                                size: 18
+                                                lineNumber: 65,
+                                                columnNumber: 17
+                                            }, ("TURBOPACK compile-time value", void 0)),
+                                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                                                href: "#register",
+                                                className: "bg-brand-green text-white px-8 py-3.5 rounded-full text-xs font-black uppercase tracking-widest hover:bg-green-700 hover:shadow-2xl hover:shadow-brand-green/40 hover:-translate-y-1 transition-all duration-300 ml-2 whitespace-nowrap",
+                                                children: t('nav.register') || 'Participer'
                                             }, void 0, false, {
                                                 fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
-                                                lineNumber: 66,
-                                                columnNumber: 59
+                                                lineNumber: 68,
+                                                columnNumber: 17
                                             }, ("TURBOPACK compile-time value", void 0))
-                                        }, void 0, false, {
-                                            fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
-                                            lineNumber: 65,
-                                            columnNumber: 15
-                                        }, ("TURBOPACK compile-time value", void 0)),
-                                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                                            href: "#register",
-                                            className: "bg-brand-green text-white px-8 py-3.5 rounded-full text-xs font-black uppercase tracking-widest hover:bg-green-700 hover:shadow-2xl hover:shadow-brand-green/40 hover:-translate-y-1 transition-all duration-300 ml-2 whitespace-nowrap",
-                                            children: t('nav.register') || 'Participer'
-                                        }, void 0, false, {
-                                            fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
-                                            lineNumber: 68,
-                                            columnNumber: 15
-                                        }, ("TURBOPACK compile-time value", void 0))
-                                    ]
-                                }, void 0, true, {
-                                    fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
-                                    lineNumber: 61,
-                                    columnNumber: 13
-                                }, ("TURBOPACK compile-time value", void 0))
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
-                            lineNumber: 49,
-                            columnNumber: 11
-                        }, ("TURBOPACK compile-time value", void 0)),
-                        /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                            onClick: ()=>setIsMenuOpen(!isMenuOpen),
-                            className: "lg:hidden w-12 h-12 flex items-center justify-center text-2xl text-brand-green hover:scale-110 transition-transform",
-                            children: isMenuOpen ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {}, void 0, false, {
+                                        ]
+                                    }, void 0, true, {
+                                        fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
+                                        lineNumber: 61,
+                                        columnNumber: 15
+                                    }, ("TURBOPACK compile-time value", void 0))
+                                ]
+                            }, void 0, true, {
                                 fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
-                                lineNumber: 75,
-                                columnNumber: 27
-                            }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__["Menu"], {}, void 0, false, {
-                                fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
-                                lineNumber: 75,
-                                columnNumber: 35
-                            }, ("TURBOPACK compile-time value", void 0))
-                        }, void 0, false, {
-                            fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
-                            lineNumber: 74,
-                            columnNumber: 11
-                        }, ("TURBOPACK compile-time value", void 0))
-                    ]
-                }, void 0, true, {
-                    fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
-                    lineNumber: 33,
-                    columnNumber: 9
-                }, ("TURBOPACK compile-time value", void 0))
-            }, void 0, false, {
-                fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
-                lineNumber: 32,
-                columnNumber: 7
-            }, ("TURBOPACK compile-time value", void 0)),
-            isMenuOpen && /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "lg:hidden fixed inset-0 bg-white/95 dark:bg-black/95 backdrop-blur-xl z-[60] p-10 flex flex-col items-center justify-center gap-8 animate-fade-in",
-                children: [
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                        onClick: ()=>setIsMenuOpen(false),
-                        className: "absolute top-10 right-10 text-3xl",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {}, void 0, false, {
-                            fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
-                            lineNumber: 82,
-                            columnNumber: 102
-                        }, ("TURBOPACK compile-time value", void 0))
-                    }, void 0, false, {
-                        fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
-                        lineNumber: 82,
-                        columnNumber: 11
-                    }, ("TURBOPACK compile-time value", void 0)),
-                    navLinks.map((link)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
-                            href: link.href,
-                            onClick: ()=>setIsMenuOpen(false),
-                            className: "text-3xl font-black uppercase tracking-tighter hover:text-brand-green transition-colors italic",
-                            children: link.label
-                        }, link.href, false, {
-                            fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
-                            lineNumber: 84,
-                            columnNumber: 13
-                        }, ("TURBOPACK compile-time value", void 0))),
-                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "flex gap-6 mt-10",
-                        children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                onClick: toggleLanguage,
-                                className: "text-xl font-black uppercase text-brand-green",
-                                children: language
-                            }, void 0, false, {
-                                fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
-                                lineNumber: 89,
-                                columnNumber: 14
+                                lineNumber: 49,
+                                columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0)),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
-                                onClick: toggleTheme,
-                                className: "text-xl",
-                                children: theme === 'light' ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$moon$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Moon$3e$__["Moon"], {}, void 0, false, {
+                                onClick: ()=>setIsMenuOpen(!isMenuOpen),
+                                className: "lg:hidden w-12 h-12 flex items-center justify-center text-2xl text-brand-green hover:scale-110 transition-transform",
+                                children: isMenuOpen ? /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$x$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__X$3e$__["X"], {}, void 0, false, {
                                     fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
-                                    lineNumber: 90,
-                                    columnNumber: 85
-                                }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$sun$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Sun$3e$__["Sun"], {}, void 0, false, {
+                                    lineNumber: 75,
+                                    columnNumber: 29
+                                }, ("TURBOPACK compile-time value", void 0)) : /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$lucide$2d$react$2f$dist$2f$esm$2f$icons$2f$menu$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__$3c$export__default__as__Menu$3e$__["Menu"], {}, void 0, false, {
                                     fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
-                                    lineNumber: 90,
-                                    columnNumber: 96
+                                    lineNumber: 75,
+                                    columnNumber: 37
                                 }, ("TURBOPACK compile-time value", void 0))
                             }, void 0, false, {
                                 fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
-                                lineNumber: 90,
-                                columnNumber: 14
+                                lineNumber: 74,
+                                columnNumber: 13
                             }, ("TURBOPACK compile-time value", void 0))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
-                        lineNumber: 88,
+                        lineNumber: 33,
                         columnNumber: 11
                     }, ("TURBOPACK compile-time value", void 0))
-                ]
-            }, void 0, true, {
+                }, void 0, false, {
+                    fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
+                    lineNumber: 32,
+                    columnNumber: 9
+                }, ("TURBOPACK compile-time value", void 0))
+            }, void 0, false, {
                 fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
-                lineNumber: 81,
-                columnNumber: 9
+                lineNumber: 31,
+                columnNumber: 7
+            }, ("TURBOPACK compile-time value", void 0)),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                className: `lg:hidden fixed bottom-0 left-0 right-0 z-[90] transition-transform duration-500 ${isMenuOpen ? 'translate-y-0' : 'translate-y-full'}`,
+                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
+                    className: "bg-white/90 dark:bg-black/95 backdrop-blur-2xl border-t border-gray-200/50 dark:border-white/10 p-4 flex justify-around items-center",
+                    children: navLinks.map((link)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("a", {
+                            href: link.href,
+                            onClick: ()=>setIsMenuOpen(false),
+                            className: "flex flex-col items-center justify-center text-gray-600 dark:text-gray-300 hover:text-brand-green transition-colors",
+                            children: [
+                                link.icon,
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                    className: "text-[10px] font-bold mt-1",
+                                    children: link.label
+                                }, void 0, false, {
+                                    fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
+                                    lineNumber: 87,
+                                    columnNumber: 15
+                                }, ("TURBOPACK compile-time value", void 0))
+                            ]
+                        }, link.href, true, {
+                            fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
+                            lineNumber: 85,
+                            columnNumber: 13
+                        }, ("TURBOPACK compile-time value", void 0)))
+                }, void 0, false, {
+                    fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
+                    lineNumber: 83,
+                    columnNumber: 9
+                }, ("TURBOPACK compile-time value", void 0))
+            }, void 0, false, {
+                fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
+                lineNumber: 82,
+                columnNumber: 7
             }, ("TURBOPACK compile-time value", void 0))
         ]
-    }, void 0, true, {
-        fileName: "[project]/Downloads/africapowerplatform/components/Header.tsx",
-        lineNumber: 31,
-        columnNumber: 5
-    }, ("TURBOPACK compile-time value", void 0));
+    }, void 0, true);
 };
 _s(Header, "O6XbeeqnLdX9+mUlmI7OlnyHnyM=", false, function() {
     return [
@@ -379,7 +372,7 @@ const Hero = ()=>{
         className: "relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-28 pb-12",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute inset-0 z-0 bg-hero-grid"
+                className: "absolute inset-0 bg-hero-grid"
             }, void 0, false, {
                 fileName: "[project]/Downloads/africapowerplatform/components/Hero.tsx",
                 lineNumber: 36,
@@ -880,7 +873,7 @@ const About = ()=>{
         className: "relative py-24 overflow-hidden section-animate flex flex-col justify-center",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute inset-0 bg-hero-grid opacity-50 z-0"
+                className: "absolute inset-0 bg-hero-grid"
             }, void 0, false, {
                 fileName: "[project]/Downloads/africapowerplatform/components/About.tsx",
                 lineNumber: 28,
@@ -1147,7 +1140,7 @@ const Speakers = ()=>{
         className: "relative py-24 overflow-hidden section-animate flex flex-col justify-center",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute inset-0 bg-hero-grid opacity-40 z-0"
+                className: "absolute inset-0 bg-hero-grid"
             }, void 0, false, {
                 fileName: "[project]/Downloads/africapowerplatform/components/Speakers.tsx",
                 lineNumber: 84,
@@ -1592,7 +1585,7 @@ const Program = ()=>{
         className: "relative py-16 overflow-hidden section-animate flex flex-col justify-center",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute inset-0 bg-hero-grid opacity-35 z-0"
+                className: "absolute inset-0 bg-hero-grid"
             }, void 0, false, {
                 fileName: "[project]/Downloads/africapowerplatform/components/Program.tsx",
                 lineNumber: 120,
@@ -1697,7 +1690,7 @@ const Registration = ()=>{
         className: "relative py-24 overflow-hidden section-animate bg-gray-50 dark:bg-gray-950",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute inset-0 bg-hero-grid opacity-20 z-0"
+                className: "absolute inset-0 bg-hero-grid"
             }, void 0, false, {
                 fileName: "[project]/Downloads/africapowerplatform/components/Registration.tsx",
                 lineNumber: 13,
@@ -1850,7 +1843,7 @@ const Gallery = ()=>{
         className: "relative py-24 overflow-hidden section-animate",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute inset-0 bg-hero-grid opacity-20 z-0"
+                className: "absolute inset-0 bg-hero-grid"
             }, void 0, false, {
                 fileName: "[project]/Downloads/africapowerplatform/components/Gallery.tsx",
                 lineNumber: 36,
@@ -2279,7 +2272,7 @@ const Sponsors = ()=>{
         className: "relative py-20 bg-white dark:bg-black overflow-hidden section-animate",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute inset-0 bg-hero-grid opacity-20 z-0"
+                className: "absolute inset-0 bg-hero-grid"
             }, void 0, false, {
                 fileName: "[project]/Downloads/africapowerplatform/components/Sponsors.tsx",
                 lineNumber: 39,
@@ -2520,7 +2513,7 @@ const Team = ()=>{
         className: "relative py-24 overflow-hidden section-animate",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute inset-0 bg-hero-grid opacity-35 z-0"
+                className: "absolute inset-0 bg-hero-grid"
             }, void 0, false, {
                 fileName: "[project]/Downloads/africapowerplatform/components/Team.tsx",
                 lineNumber: 52,
@@ -2833,7 +2826,7 @@ const Faq = ()=>{
         className: "relative py-24 overflow-hidden section-animate flex flex-col justify-center",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute inset-0 bg-hero-grid opacity-35 z-0"
+                className: "absolute inset-0 bg-hero-grid"
             }, void 0, false, {
                 fileName: "[project]/Downloads/africapowerplatform/components/Faq.tsx",
                 lineNumber: 62,
@@ -3030,7 +3023,7 @@ const Contact = ()=>{
         className: "relative py-24 overflow-hidden section-animate flex flex-col justify-center bg-gray-50 dark:bg-gray-950",
         children: [
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$Downloads$2f$africapowerplatform$2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                className: "absolute inset-0 bg-hero-grid opacity-25 z-0"
+                className: "absolute inset-0 bg-hero-grid"
             }, void 0, false, {
                 fileName: "[project]/Downloads/africapowerplatform/components/Contact.tsx",
                 lineNumber: 29,

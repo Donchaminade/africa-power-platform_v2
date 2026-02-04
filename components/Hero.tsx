@@ -33,7 +33,7 @@ const Hero: React.FC = () => {
 
   return (
     <section id="hero" className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-28 pb-12">
-      <div className="absolute inset-0 z-0 bg-hero-grid"></div>
+      <div className="absolute inset-0 bg-hero-grid"></div>
       <div className="absolute inset-0 z-[1] bg-gradient-to-b from-transparent via-white/30 to-white dark:via-black/50 dark:to-black"></div>
 
       <div className="relative z-10 max-w-7xl mx-auto px-6 text-center">

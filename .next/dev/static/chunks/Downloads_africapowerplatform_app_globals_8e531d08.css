@@ -454,6 +454,14 @@ body:is(.dark *) {
   z-index: 999;
 }
 
+.z-\[110\] {
+  z-index: 110;
+}
+
+.z-\[90\] {
+  z-index: 90;
+}
+
 .mx-auto {
   margin-left: auto;
   margin-right: auto;
@@ -862,6 +870,11 @@ body:is(.dark *) {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.translate-y-full {
+  --tw-translate-y: 100%;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
 .rotate-0 {
   --tw-rotate: 0deg;
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
@@ -1078,6 +1091,10 @@ body:is(.dark *) {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.justify-around {
+  justify-content: space-around;
 }
 
 .gap-10 {
@@ -2252,12 +2269,12 @@ body:is(.dark *) {
 
 :root {
   --brand-primary: #00a859;
-  --grid-color: #00a85966;
+  --grid-color: #00a8591a;
   --grid-size: 80px;
 }
 
 .dark {
-  --grid-color: #00a85999;
+  --grid-color: #00a85933;
 }
 
 .custom-scrollbar::-webkit-scrollbar {
