@@ -32,7 +32,7 @@ const Hero: React.FC = () => {
   const registrationLink = settings?.url_registration_attendee || 'https://forms.office.com/r/UCMe9tdkty';
 
   return (
-    <section className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-28 pb-12">
+    <section id="hero" className="relative min-h-[90vh] flex items-center justify-center overflow-hidden pt-28 pb-12">
       <div className="absolute inset-0 z-0 bg-hero-grid"></div>
       <div className="absolute inset-0 z-[1] bg-gradient-to-b from-transparent via-white/30 to-white dark:via-black/50 dark:to-black"></div>
 

@@ -29,7 +29,7 @@ const Faq: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
   const [activeCategory, setActiveCategory] = useState('All');
-  const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [openIndex, setOpenIndex] = useState<number | null>(null);
 
   useEffect(() => {
     apiFetch<{data: FaqItemData[]}>('power_api/faq.php', {}, { data: MOCK_FAQ })

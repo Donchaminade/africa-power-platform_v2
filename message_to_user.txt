@@ -1,5 +1,7 @@
-Vous aviez raison, le lien précédent a été refusé car la plupart des sites, y compris Bing Maps, empêchent leur intégration directe pour des raisons de sécurité.
+J'ai identifié et corrigé le problème.
 
-J'ai corrigé cela en remplaçant le lien de directions par une URL d'intégration Bing Maps spécialement conçue pour être affichée dans un `iframe`. La carte devrait maintenant s'afficher correctement.
+La page défilait vers la section FAQ car le premier élément de la liste était ouvert par défaut, ce qui attirait le focus du navigateur.
 
-Veuillez vérifier et me dire si cela vous convient.
+J'ai modifié le comportement pour que toutes les questions de la FAQ soient fermées au chargement de la page. Le site devrait maintenant s'afficher correctement sur la section "Hero" après le splash screen.
+
+Veuillez vérifier si le problème est résolu.

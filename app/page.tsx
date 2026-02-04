@@ -1,4 +1,3 @@
-
 "use client";
 
 import Header from "../components/Header";
@@ -19,6 +18,7 @@ import WhatsAppButton from "../components/WhatsAppButton";
 import Chatbot from "../components/Chatbot";
 import { useEffect, useState } from "react";
 import { useTranslation } from "../contexts/LanguageContext";
+import Image from 'next/image';
 
 export default function Home() {
   const { loading } = useTranslation();
@@ -40,8 +40,12 @@ export default function Home() {
 
   useEffect(() => {
     if (showContent) {
-      // On s'assure d'être tout en haut de la page au démarrage
-      window.scrollTo(0, 0);
+      requestAnimationFrame(() => {
+        const heroElement = document.getElementById('hero');
+        if (heroElement) {
+          heroElement.scrollIntoView();
+        }
+      });
 
       const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
       const observer = new IntersectionObserver((entries) => {
@@ -64,9 +68,14 @@ export default function Home() {
         <div className="relative flex flex-col items-center">
           <div className="relative mb-16 group">
             <div className="absolute inset-0 bg-brand-green blur-3xl opacity-30 group-hover:opacity-50 transition-opacity animate-pulse"></div>
-            <svg className="h-28 w-28 text-brand-green relative z-10 animate-[float_3s_ease-in-out_infinite]" viewBox="0 0 52 52" fill="currentColor">
-              <path d="M26 0C11.64 0 0 11.64 0 26s11.64 26 26 26 26-11.64 26-26S40.36 0 26 0zm-2 49.86C12.05 49.37 4 38.65 4 26S12.05 2.63 24 2.14v47.72zm4-47.72c11.95.49 20 11.21 20 23.86s-8.05 23.37-20 23.86V2.14z"/>
-            </svg>
+            <Image
+                src="/assets/images/logo.png"
+                alt="Africa Power Platform Logo"
+                width={112}
+                height={112}
+                className="relative z-10 animate-[float_3s_ease-in-out_infinite]"
+                priority
+            />
             <div className="absolute bottom-0 left-0 w-full h-1 bg-gradient-to-r from-transparent via-white to-transparent opacity-20 animate-[scan_2s_linear_infinite]"></div>
           </div>
 
