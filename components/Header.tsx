@@ -1,10 +1,9 @@
-
 "use client";
 
 import React, { useState, useEffect } from 'react';
 import { useTheme } from '../contexts/ThemeContext';
 import { useTranslation } from '../contexts/LanguageContext';
-import { Moon, Sun, Menu, X } from 'lucide-react'; // Removed Info, Calendar, Users, Award
+import { Moon, Sun, Menu, X } from 'lucide-react';
 import Image from 'next/image';
 
 const Header: React.FC = () => {
@@ -13,13 +12,26 @@ const Header: React.FC = () => {
   const { theme, toggleTheme } = useTheme();
   const { language, toggleLanguage, t } = useTranslation();
 
+  // Handle body scroll when menu is open
   useEffect(() => {
-    const handleScroll = () => setIsScrolled(window.scrollY > 20);
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
+    if (isMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [isMenuOpen]);
+
+  // Handle header style on scroll
+  useEffect(() => {
+    const onScroll = () => setIsScrolled(window.scrollY > 20);
+    window.addEventListener('scroll', onScroll, { passive: true });
+    return () => window.removeEventListener('scroll', onScroll);
   }, []);
 
-  const navLinks = [ // Reverted to original navLinks without icons
+  const navLinks = [
     { href: '#about', label: t('nav.about') },
     { href: '#program', label: t('nav.program') },
     { href: '#speakers', label: t('nav.speakers') },
@@ -28,85 +40,124 @@ const Header: React.FC = () => {
 
   return (
     <>
-      <header className={`fixed top-0 left-0 w-full z-[100] transition-all duration-500 ${isScrolled ? 'py-3' : 'py-6'}`}>
-        <nav className="mx-auto max-w-[95%] 2xl:max-w-[1440px] lg:px-2 lg:sm:px-4"> {/* Adjusted for desktop */}
-          <div className={`flex items-center justify-between bg-white/90 dark:bg-black/95 backdrop-blur-2xl border border-gray-200/50 dark:border-white/10 rounded-full px-6 sm:px-10 py-3 shadow-2xl transition-all duration-500 ${isScrolled ? 'shadow-brand-green/20 scale-[0.98]' : ''} 
-                       lg:mx-auto lg:max-w-[95%] lg:2xl:max-w-[1440px] lg:px-2 lg:sm:px-4 mx-4 mt-4 rounded-3xl shadow-2xl`}> {/* Added floating styles for mobile */}
-            
-            <a href="/" className="flex items-center gap-4 group flex-shrink-0">
+      {/* =================================================================
+          HEADER
+      ================================================================== */}
+      <header className={`fixed top-0 left-0 w-full z-[100] transition-all duration-300 py-3`}>
+        <div className="mx-auto max-w-7xl px-4">
+          <div className={`
+            flex items-center justify-between
+            rounded-full px-6 py-3
+            backdrop-blur-xl
+            transition-all duration-300
+            bg-white/80 dark:bg-black/80
+            border border-gray-200/50 dark:border-white/10
+            shadow-lg
+            ${isScrolled ? 'scale-[0.98] shadow-brand-green/20' : 'scale-100'}
+          `}>
+            {/* LOGO */}
+            <a href="/" className="flex items-center gap-4 flex-shrink-0">
               <Image
                 src="/assets/images/logo.png"
                 alt="Africa Power Platform Logo"
                 width={40}
                 height={40}
-                className="group-hover:rotate-[360deg] transition-transform duration-1000 ease-in-out"
+                className="transition-transform duration-700 hover:rotate-180"
               />
-              <div className="flex flex-col group-hover:translate-x-1 transition-transform">
-                <span className="hidden sm:block font-black text-xl lg:text-2xl tracking-tighter leading-none">Africa Power</span>
-                <span className="hidden sm:block text-brand-green font-black text-[10px] tracking-[0.4em] uppercase">Platform</span>
+              <div className="hidden sm:block">
+                <div className="font-black text-xl leading-none">Africa Power</div>
+                <div className="text-brand-green text-[10px] tracking-[0.4em] uppercase font-black">Platform</div>
               </div>
             </a>
 
-            {/* Desktop Navigation */}
-            <div className="hidden lg:flex items-center justify-end flex-1 ml-10 gap-4 xl:gap-8">
-              <div className="flex items-center gap-4 xl:gap-8">
-                {navLinks.map(link => (
-                  <a key={link.href} href={link.href} className="text-[11px] font-black hover:text-brand-green transition-all relative group uppercase tracking-[0.2em] whitespace-nowrap">
-                    {link.label}
-                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-green transition-all duration-500 group-hover:w-full"></span>
-                  </a>
-                ))}
-              </div>
-
-              <div className="h-6 w-px bg-gray-200 dark:bg-gray-800 hidden xl:block" />
-              
+            {/* DESKTOP NAVIGATION */}
+            <div className="hidden lg:flex items-center gap-8">
+              {navLinks.map((link) => (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="text-[11px] font-black uppercase tracking-[0.2em] text-gray-800 dark:text-gray-200 hover:text-brand-green transition-colors relative group"
+                >
+                  {link.label}
+                  <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-brand-green transition-all group-hover:w-full" />
+                </a>
+              ))}
+              <div className="h-6 w-px bg-gray-200 dark:bg-gray-700 mx-4" />
               <div className="flex items-center gap-3">
-                <button onClick={toggleLanguage} className="text-[10px] font-black w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 hover:bg-brand-green hover:text-white transition-all uppercase flex items-center justify-center border border-transparent hover:border-brand-green/30">
-                  {language === 'fr' ? 'en' : 'fr'}
+                <button onClick={toggleLanguage} className="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 text-[10px] font-black uppercase hover:bg-brand-green hover:text-white transition">
+                  {language === 'fr' ? 'EN' : 'FR'}
                 </button>
-                <button onClick={toggleTheme} className="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-brand-green hover:text-white transition-all text-sm border border-transparent hover:border-brand-green/30">
+                <button onClick={toggleTheme} className="w-10 h-10 rounded-full bg-gray-100 dark:bg-gray-800 flex items-center justify-center hover:bg-brand-green hover:text-white transition">
                   {theme === 'light' ? <Moon size={18} /> : <Sun size={18} />}
                 </button>
-                <a href="#register" className="bg-brand-green text-white px-8 py-3.5 rounded-full text-xs font-black uppercase tracking-widest hover:bg-green-700 hover:shadow-2xl hover:shadow-brand-green/40 hover:-translate-y-1 transition-all duration-300 ml-2 whitespace-nowrap">
+                <a href="#register" className="bg-brand-green text-white px-7 py-3 rounded-full text-xs font-black uppercase tracking-widest hover:bg-green-700 hover:shadow-xl hover:-translate-y-0.5 transition">
                   {t('nav.register') || 'Participer'}
                 </a>
               </div>
             </div>
 
-            {/* Mobile Hamburger Button */}
-            <button onClick={() => setIsMenuOpen(!isMenuOpen)} className="lg:hidden w-12 h-12 flex items-center justify-center text-2xl text-brand-green hover:scale-110 transition-transform">
-              {isMenuOpen ? <X /> : <Menu />}
+            {/* MOBILE HAMBURGER BUTTON */}
+            <button
+              onClick={() => setIsMenuOpen(true)}
+              className="lg:hidden w-12 h-12 flex items-center justify-center text-brand-green"
+            >
+              <Menu size={28} />
             </button>
-          </div>
-        </nav>
-      </header>
-
-      {/* Mobile Full-Screen Overlay Menu (for secondary actions and primary nav links) */}
-      {isMenuOpen && (
-        <div className="lg:hidden fixed inset-0 bg-white/95 dark:bg-black/95 backdrop-blur-xl z-[120] p-10 flex flex-col items-center justify-center gap-8 animate-fade-in">
-          <button onClick={() => setIsMenuOpen(false)} className="absolute top-10 right-10 text-3xl text-brand-green"><X /></button>
-          
-          {/* Primary Nav Links */}
-          <div className="flex flex-col items-center gap-6">
-            {navLinks.map(link => (
-                <a key={link.href} href={link.href} onClick={() => setIsMenuOpen(false)} className="text-3xl font-black uppercase tracking-tighter hover:text-brand-green transition-colors italic">
-                {link.label}
-                </a>
-            ))}
-          </div>
-
-          {/* Secondary Actions */}
-          <div className="flex flex-col items-center justify-center gap-6 mt-10">
-            <button onClick={toggleLanguage} className="text-xl font-black uppercase text-brand-green">{language === 'fr' ? 'English' : 'Français'}</button>
-            <button onClick={toggleTheme} className="text-xl flex items-center gap-2">
-                {theme === 'light' ? <Moon /> : <Sun />} {theme === 'light' ? 'Mode sombre' : 'Mode clair'}
-            </button>
-            <a href="#register" onClick={() => setIsMenuOpen(false)} className="bg-brand-green text-white px-8 py-3.5 rounded-full text-lg font-black uppercase tracking-widest hover:bg-green-700 hover:shadow-2xl hover:shadow-brand-green/40 hover:-translate-y-1 transition-all duration-300 ml-2 whitespace-nowrap">
-                {t('nav.register') || 'Participer'}
-            </a>
           </div>
         </div>
-      )}
+      </header>
+
+      {/* =================================================================
+          MOBILE MENU (OVERLAY)
+      ================================================================== */}
+      <div className={`
+        fixed inset-0 z-[1000]
+        bg-white/90 dark:bg-black/90 backdrop-blur-xl
+        flex flex-col items-center justify-center
+        transition-opacity duration-500
+        ${isMenuOpen ? 'opacity-100' : 'opacity-0 pointer-events-none'}
+      `}>
+        {/* Close Button */}
+        <button
+          onClick={() => setIsMenuOpen(false)}
+          className="absolute top-6 right-6 w-14 h-14 flex items-center justify-center text-brand-green bg-gray-100 dark:bg-gray-800 rounded-full"
+        >
+          <X size={32} />
+        </button>
+
+        {/* Main Links */}
+        <nav className="flex flex-col items-center gap-8">
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              onClick={() => setIsMenuOpen(false)}
+              className="text-3xl font-black uppercase italic text-gray-900 dark:text-white hover:text-brand-green transition-colors"
+            >
+              {link.label}
+            </a>
+          ))}
+        </nav>
+
+        {/* Secondary Actions */}
+        <div className="absolute bottom-16 flex flex-col items-center gap-6">
+            <a
+              href="#register"
+              onClick={() => setIsMenuOpen(false)}
+              className="bg-brand-green text-white px-10 py-4 rounded-full text-lg font-black uppercase tracking-widest hover:bg-green-700 transition"
+            >
+              {t('nav.register') || 'Participer'}
+            </a>
+            <div className="flex items-center gap-6 mt-4">
+                <button onClick={toggleLanguage} className="text-xl font-black uppercase text-brand-green">
+                {language === 'fr' ? 'English' : 'Français'}
+                </button>
+                <button onClick={toggleTheme} className="text-2xl flex items-center gap-2 text-gray-800 dark:text-gray-200">
+                    {theme === 'light' ? <Moon /> : <Sun />}
+                </button>
+            </div>
+        </div>
+      </div>
     </>
   );
 };
