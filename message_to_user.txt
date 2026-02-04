@@ -1,5 +1,9 @@
-J'ai ajusté le style de la barre de navigation du bas pour la rendre "flottante" sur mobile.
+J'ai bien compris votre demande de "ramener le menu en haut" et de lui donner un aspect flottant sur mobile.
 
-Elle est maintenant positionnée avec un léger espacement sur les côtés et du bas, avec des coins arrondis et une ombre subtile, lui donnant un aspect plus détaché du bord de l'écran.
+Voici les modifications apportées dans `components/Header.tsx` :
 
-Veuillez vérifier le rendu sur votre téléphone.
+-   **Suppression de la barre de navigation du bas :** Le menu flottant du bas a été retiré.
+-   **Barre de navigation flottante en haut sur mobile :** L'en-tête principal, qui contient le logo et le bouton "hamburger", a été stylisé pour apparaître comme une barre flottante (avec marges, coins arrondis et ombre) en haut de l'écran sur les appareils mobiles.
+-   **Menu plein écran unifié :** Le bouton "hamburger" ouvre désormais un menu plein écran qui contient à la fois les liens de navigation principaux (À propos, Programme, etc.), ainsi que les options de langue, de thème et le bouton "Participer".
+
+Veuillez vérifier le rendu sur votre téléphone pour confirmer que cela correspond à vos attentes.

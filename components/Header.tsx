@@ -4,7 +4,7 @@
 import React, { useState, useEffect } from 'react';
 import { useTheme } from '../contexts/ThemeContext';
 import { useTranslation } from '../contexts/LanguageContext';
-import { Moon, Sun, Menu, X, Info, Calendar, Users, Award } from 'lucide-react';
+import { Moon, Sun, Menu, X } from 'lucide-react'; // Removed Info, Calendar, Users, Award
 import Image from 'next/image';
 
 const Header: React.FC = () => {
@@ -19,18 +19,19 @@ const Header: React.FC = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const primaryNavLinks = [
-    { href: '#about', label: t('nav.about'), icon: <Info size={20} /> },
-    { href: '#program', label: t('nav.program'), icon: <Calendar size={20} /> },
-    { href: '#speakers', label: t('nav.speakers'), icon: <Users size={20} /> },
-    { href: '#sponsors', label: t('nav.sponsors'), icon: <Award size={20} /> },
+  const navLinks = [ // Reverted to original navLinks without icons
+    { href: '#about', label: t('nav.about') },
+    { href: '#program', label: t('nav.program') },
+    { href: '#speakers', label: t('nav.speakers') },
+    { href: '#sponsors', label: t('nav.sponsors') },
   ];
 
   return (
     <>
       <header className={`fixed top-0 left-0 w-full z-[100] transition-all duration-500 ${isScrolled ? 'py-3' : 'py-6'}`}>
-        <nav className="mx-auto max-w-[95%] 2xl:max-w-[1440px] px-2 sm:px-4">
-          <div className={`flex items-center justify-between bg-white/90 dark:bg-black/95 backdrop-blur-2xl border border-gray-200/50 dark:border-white/10 rounded-full px-6 sm:px-10 py-3 shadow-2xl transition-all duration-500 ${isScrolled ? 'shadow-brand-green/20 scale-[0.98]' : ''}`}>
+        <nav className="mx-auto max-w-[95%] 2xl:max-w-[1440px] lg:px-2 lg:sm:px-4"> {/* Adjusted for desktop */}
+          <div className={`flex items-center justify-between bg-white/90 dark:bg-black/95 backdrop-blur-2xl border border-gray-200/50 dark:border-white/10 rounded-full px-6 sm:px-10 py-3 shadow-2xl transition-all duration-500 ${isScrolled ? 'shadow-brand-green/20 scale-[0.98]' : ''} 
+                       lg:mx-auto lg:max-w-[95%] lg:2xl:max-w-[1440px] lg:px-2 lg:sm:px-4 mx-4 mt-4 rounded-3xl shadow-2xl`}> {/* Added floating styles for mobile */}
             
             <a href="/" className="flex items-center gap-4 group flex-shrink-0">
               <Image
@@ -49,7 +50,7 @@ const Header: React.FC = () => {
             {/* Desktop Navigation */}
             <div className="hidden lg:flex items-center justify-end flex-1 ml-10 gap-4 xl:gap-8">
               <div className="flex items-center gap-4 xl:gap-8">
-                {primaryNavLinks.map(link => (
+                {navLinks.map(link => (
                   <a key={link.href} href={link.href} className="text-[11px] font-black hover:text-brand-green transition-all relative group uppercase tracking-[0.2em] whitespace-nowrap">
                     {link.label}
                     <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-brand-green transition-all duration-500 group-hover:w-full"></span>
@@ -80,23 +81,22 @@ const Header: React.FC = () => {
         </nav>
       </header>
 
-      {/* Mobile Bottom Navbar - Always visible on mobile */}
-      <div className="lg:hidden fixed bottom-0 left-0 right-0 z-[90] mx-4 mb-4">
-        <div className="bg-white/90 dark:bg-black/95 backdrop-blur-2xl rounded-3xl border border-gray-200/50 dark:border-white/10 px-4 py-3 shadow-2xl flex justify-around items-center">
-          {primaryNavLinks.map(link => (
-            <a key={link.href} href={link.href} onClick={() => setIsMenuOpen(false)} className="flex flex-col items-center justify-center text-gray-600 dark:text-gray-300 hover:text-brand-green transition-colors">
-              {link.icon}
-              <span className="text-[10px] font-bold mt-1">{link.label}</span>
-            </a>
-          ))}
-        </div>
-      </div>
-
-      {/* Mobile Full-Screen Overlay Menu (for secondary actions) */}
+      {/* Mobile Full-Screen Overlay Menu (for secondary actions and primary nav links) */}
       {isMenuOpen && (
         <div className="lg:hidden fixed inset-0 bg-white/95 dark:bg-black/95 backdrop-blur-xl z-[120] p-10 flex flex-col items-center justify-center gap-8 animate-fade-in">
           <button onClick={() => setIsMenuOpen(false)} className="absolute top-10 right-10 text-3xl text-brand-green"><X /></button>
-          <div className="flex flex-col items-center justify-center gap-6">
+          
+          {/* Primary Nav Links */}
+          <div className="flex flex-col items-center gap-6">
+            {navLinks.map(link => (
+                <a key={link.href} href={link.href} onClick={() => setIsMenuOpen(false)} className="text-3xl font-black uppercase tracking-tighter hover:text-brand-green transition-colors italic">
+                {link.label}
+                </a>
+            ))}
+          </div>
+
+          {/* Secondary Actions */}
+          <div className="flex flex-col items-center justify-center gap-6 mt-10">
             <button onClick={toggleLanguage} className="text-xl font-black uppercase text-brand-green">{language === 'fr' ? 'English' : 'Français'}</button>
             <button onClick={toggleTheme} className="text-xl flex items-center gap-2">
                 {theme === 'light' ? <Moon /> : <Sun />} {theme === 'light' ? 'Mode sombre' : 'Mode clair'}
