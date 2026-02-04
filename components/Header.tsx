@@ -81,13 +81,15 @@ const Header: React.FC = () => {
       </header>
 
       {/* Mobile Bottom Navbar - Always visible on mobile */}
-      <div className="lg:hidden fixed bottom-0 left-0 right-0 z-[90] bg-white/90 dark:bg-black/95 backdrop-blur-2xl border-t border-gray-200/50 dark:border-white/10 p-4 flex justify-around items-center">
-        {primaryNavLinks.map(link => (
-          <a key={link.href} href={link.href} onClick={() => setIsMenuOpen(false)} className="flex flex-col items-center justify-center text-gray-600 dark:text-gray-300 hover:text-brand-green transition-colors">
-            {link.icon}
-            <span className="text-[10px] font-bold mt-1">{link.label}</span>
-          </a>
-        ))}
+      <div className="lg:hidden fixed bottom-0 left-0 right-0 z-[90] mx-4 mb-4">
+        <div className="bg-white/90 dark:bg-black/95 backdrop-blur-2xl rounded-3xl border border-gray-200/50 dark:border-white/10 px-4 py-3 shadow-2xl flex justify-around items-center">
+          {primaryNavLinks.map(link => (
+            <a key={link.href} href={link.href} onClick={() => setIsMenuOpen(false)} className="flex flex-col items-center justify-center text-gray-600 dark:text-gray-300 hover:text-brand-green transition-colors">
+              {link.icon}
+              <span className="text-[10px] font-bold mt-1">{link.label}</span>
+            </a>
+          ))}
+        </div>
       </div>
 
       {/* Mobile Full-Screen Overlay Menu (for secondary actions) */}

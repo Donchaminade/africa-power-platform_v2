@@ -1,6 +1,5 @@
-J'ai implémenté le nouveau comportement pour le menu mobile :
+J'ai ajusté le style de la barre de navigation du bas pour la rendre "flottante" sur mobile.
 
--   La **barre de navigation du bas est maintenant toujours visible** sur mobile (sur les écrans de taille `lg` et inférieure), même lorsque vous faites défiler la page. Elle contient les liens de navigation principaux avec leurs icônes.
--   Le **bouton "hamburger" dans l'en-tête** contrôle maintenant un **menu en plein écran** qui s'affiche par-dessus le reste du contenu. Ce menu contient les options secondaires comme le changement de langue, le thème, et le bouton "Participer".
+Elle est maintenant positionnée avec un léger espacement sur les côtés et du bas, avec des coins arrondis et une ombre subtile, lui donnant un aspect plus détaché du bord de l'écran.
 
-Ce devrait être une expérience mobile plus cohérente et plus facile à utiliser. Veuillez vérifier le fonctionnement sur votre téléphone.
+Veuillez vérifier le rendu sur votre téléphone.
