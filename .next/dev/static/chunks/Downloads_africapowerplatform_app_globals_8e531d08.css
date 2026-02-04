@@ -326,6 +326,10 @@ body:is(.dark *) {
   pointer-events: none;
 }
 
+.visible {
+  visibility: visible;
+}
+
 .fixed {
   position: fixed;
 }
@@ -460,6 +464,10 @@ body:is(.dark *) {
 
 .z-\[90\] {
   z-index: 90;
+}
+
+.z-\[120\] {
+  z-index: 120;
 }
 
 .mx-auto {

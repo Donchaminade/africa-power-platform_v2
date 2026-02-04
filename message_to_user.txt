@@ -1,6 +1,6 @@
-J'ai mis en place la barre de navigation en bas de l'écran pour la version mobile.
+J'ai implémenté le nouveau comportement pour le menu mobile :
 
-- Le menu plein écran a été remplacé par une barre de navigation qui apparaît en bas lorsque vous cliquez sur l'icône du menu.
-- J'ai ajouté des icônes pour les sections principales afin d'optimiser l'espace.
+-   La **barre de navigation du bas est maintenant toujours visible** sur mobile (sur les écrans de taille `lg` et inférieure), même lorsque vous faites défiler la page. Elle contient les liens de navigation principaux avec leurs icônes.
+-   Le **bouton "hamburger" dans l'en-tête** contrôle maintenant un **menu en plein écran** qui s'affiche par-dessus le reste du contenu. Ce menu contient les options secondaires comme le changement de langue, le thème, et le bouton "Participer".
 
-Cette nouvelle disposition devrait grandement améliorer l'ergonomie sur mobile. Veuillez vérifier sur votre téléphone pour voir si le résultat vous convient.
+Ce devrait être une expérience mobile plus cohérente et plus facile à utiliser. Veuillez vérifier le fonctionnement sur votre téléphone.
