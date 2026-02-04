@@ -7,7 +7,11 @@ const Location: React.FC = () => {
     
     const venueName = settings?.event_venue_name || "Palais des Congrès";
     const address = settings?.event_address || "Cotonou, Bénin";
-    const mapUrl = settings?.google_maps_embed_url || "";
+    // const mapUrl = settings?.google_maps_embed_url || ""; // Commented out to hardcode for now
+
+    // Temporary: Hardcoded Bing Maps embed URL.
+    const hardcodedMapUrl = "https://www.bing.com/maps/embed?h=400&w=500&cp=6.349306~2.404463&lvl=18&typ=d&sty=r&src=SHELL&FORM=MBEDV";
+
 
     return (
         <section className="py-24 bg-gradient-to-b from-white via-gray-50 to-white dark:from-black dark:via-gray-900 dark:to-black section-animate">
@@ -43,21 +47,16 @@ const Location: React.FC = () => {
                         </div>
                     </div>
                     <div className="rounded-[2.5rem] overflow-hidden border-4 border-white dark:border-gray-900 shadow-2xl h-96">
-                        {mapUrl ? ( // Rendre l'iframe seulement si mapUrl n'est pas vide
-                            <iframe
-                                src={mapUrl}
-                                width="100%"
-                                height="100%"
-                                style={{ border: 0 }}
-                                allowFullScreen={true}
-                                loading="lazy"
-                                referrerPolicy="no-referrer-when-downgrade">
-                            </iframe>
-                        ) : ( // Afficher un message de placeholder ou rien si mapUrl est vide
-                            <div className="flex items-center justify-center w-full h-full bg-gray-200 dark:bg-gray-800 text-gray-500 dark:text-gray-400">
-                                <p>Map non disponible</p>
-                            </div>
-                        )}
+                        {/* Using hardcoded Bing Maps URL as requested */}
+                        <iframe
+                            src={hardcodedMapUrl}
+                            width="100%"
+                            height="100%"
+                            style={{ border: 0 }}
+                            allowFullScreen={true}
+                            loading="lazy"
+                            referrerPolicy="no-referrer-when-downgrade">
+                        </iframe>
                     </div>
                 </div>
             </div>
