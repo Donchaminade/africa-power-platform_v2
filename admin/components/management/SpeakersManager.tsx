@@ -4,6 +4,7 @@
 import React, { useState } from 'react';
 import Modal from '../ui/Modal';
 import DataTable from '../ui/DataTable';
+import { Eye, Edit, Trash } from 'lucide-react';
 
 const mockSpeakers = [
   { id: 1, name: 'Adama Traoré', role: 'MVP Power BI', category: 'Data', image: 'https://picsum.photos/100/100?random=10' },
@@ -32,9 +33,9 @@ const SpeakersManager: React.FC<{ authUser: any }> = () => {
 
   const renderActions = (item: typeof mockSpeakers[0]) => (
     <div className="flex justify-end gap-2">
-      <button className="w-10 h-10 rounded-xl bg-gray-100 dark:bg-white/5 text-gray-500 hover:bg-blue-500 hover:text-white transition-all"><i className="fas fa-eye"></i></button>
-      <button className="w-10 h-10 rounded-xl bg-gray-100 dark:bg-white/5 text-gray-500 hover:bg-emerald-500 hover:text-white transition-all"><i className="fas fa-edit"></i></button>
-      <button className="w-10 h-10 rounded-xl bg-gray-100 dark:bg-white/5 text-gray-500 hover:bg-red-500 hover:text-white transition-all"><i className="fas fa-trash"></i></button>
+      <button className="w-10 h-10 rounded-xl bg-gray-100 dark:bg-white/5 text-gray-500 hover:bg-blue-500 hover:text-white transition-all"><Eye /></button>
+      <button className="w-10 h-10 rounded-xl bg-gray-100 dark:bg-white/5 text-gray-500 hover:bg-emerald-500 hover:text-white transition-all"><Edit /></button>
+      <button className="w-10 h-10 rounded-xl bg-gray-100 dark:bg-white/5 text-gray-500 hover:bg-red-500 hover:text-white transition-all"><Trash /></button>
     </div>
   );
 

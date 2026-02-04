@@ -1,8 +1,0 @@
-J'ai ajouté un écran de démarrage (splash screen) à votre site.
-
-- Un nouveau composant `SplashScreen.tsx` a été créé dans le dossier `components`.
-- Le fichier `app/layout.tsx` a été mis à jour pour afficher cet écran de démarrage pendant 2 secondes lors du chargement initial de la page.
-
-Vous devriez maintenant voir votre logo avec une animation de pulsation au centre de l'écran lorsque vous chargez le site pour la première fois.
-
-Faites-moi savoir si le résultat vous convient ou si vous souhaitez des ajustements !

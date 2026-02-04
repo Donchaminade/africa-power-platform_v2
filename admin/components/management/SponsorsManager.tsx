@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import Modal from '../ui/Modal';
 import DataTable from '../ui/DataTable';
+import { Edit, Trash } from 'lucide-react';
 
 interface Sponsor {
     id: number;
@@ -50,8 +51,8 @@ const SponsorsManager = () => {
 
   const renderActions = (item: Sponsor) => (
     <div className="flex justify-end gap-2">
-      <button className="w-10 h-10 rounded-xl bg-gray-100 dark:bg-white/5 text-gray-500 hover:bg-emerald-500 hover:text-white transition-all"><i className="fas fa-edit"></i></button>
-      <button className="w-10 h-10 rounded-xl bg-gray-100 dark:bg-white/5 text-gray-500 hover:bg-red-500 hover:text-white transition-all"><i className="fas fa-trash"></i></button>
+      <button className="w-10 h-10 rounded-xl bg-gray-100 dark:bg-white/5 text-gray-500 hover:bg-emerald-500 hover:text-white transition-all"><Edit /></button>
+      <button className="w-10 h-10 rounded-xl bg-gray-100 dark:bg-white/5 text-gray-500 hover:bg-red-500 hover:text-white transition-all"><Trash /></button>
     </div>
   );
 

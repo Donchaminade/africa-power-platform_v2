@@ -4,6 +4,7 @@
 import React, { useState } from 'react';
 import Modal from '../ui/Modal';
 import DataTable from '../ui/DataTable';
+import { Megaphone, Users, Lightbulb, Cog, Edit, Trash } from 'lucide-react';
 
 interface ProgramItem {
     id: number;
@@ -11,14 +12,14 @@ interface ProgramItem {
     start_time: string;
     end_time: string;
     title_fr: string;
-    icon_class: string;
+    icon: React.ReactNode;
 }
 
 const mockProgram: ProgramItem[] = [
-    { id: 1, day: 1, start_time: "11:00", end_time: "12:00", title_fr: "Keynote d'Ouverture", icon_class: "fas fa-bullhorn" },
-    { id: 2, day: 1, start_time: "12:00", end_time: "13:30", title_fr: "Panel: Transformation Digitale", icon_class: "fas fa-users" },
-    { id: 3, day: 2, start_time: "10:00", end_time: "13:00", title_fr: "Bootcamp: Idéation & Design", icon_class: "fas fa-lightbulb" },
-    { id: 4, day: 2, start_time: "14:00", end_time: "16:30", title_fr: "Bootcamp: Développement", icon_class: "fas fa-cogs" },
+    { id: 1, day: 1, start_time: "11:00", end_time: "12:00", title_fr: "Keynote d'Ouverture", icon: <Megaphone /> },
+    { id: 2, day: 1, start_time: "12:00", end_time: "13:30", title_fr: "Panel: Transformation Digitale", icon: <Users /> },
+    { id: 3, day: 2, start_time: "10:00", end_time: "13:00", title_fr: "Bootcamp: Idéation & Design", icon: <Lightbulb /> },
+    { id: 4, day: 2, start_time: "14:00", end_time: "16:30", title_fr: "Bootcamp: Développement", icon: <Cog /> },
 ];
 
 const ProgramManager: React.FC<{ authUser: any }> = ({ authUser }) => {
@@ -44,8 +45,8 @@ const ProgramManager: React.FC<{ authUser: any }> = ({ authUser }) => {
 
     const renderActions = (item: ProgramItem) => (
         <div className="flex justify-end gap-2">
-            <button onClick={() => openModal(item)} className="w-10 h-10 rounded-xl bg-gray-100 dark:bg-white/5 text-gray-500 hover:bg-emerald-500 hover:text-white transition-all"><i className="fas fa-edit"></i></button>
-            <button className="w-10 h-10 rounded-xl bg-gray-100 dark:bg-white/5 text-gray-500 hover:bg-red-500 hover:text-white transition-all"><i className="fas fa-trash"></i></button>
+            <button onClick={() => openModal(item)} className="w-10 h-10 rounded-xl bg-gray-100 dark:bg-white/5 text-gray-500 hover:bg-emerald-500 hover:text-white transition-all"><Edit /></button>
+            <button className="w-10 h-10 rounded-xl bg-gray-100 dark:bg-white/5 text-gray-500 hover:bg-red-500 hover:text-white transition-all"><Trash /></button>
         </div>
     );
 

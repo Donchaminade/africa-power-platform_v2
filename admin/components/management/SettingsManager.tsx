@@ -1,6 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from 'react';
+import { Ticket, Handshake, Mic, Mail, Phone, MessageCircle, Linkedin, Twitter, Facebook } from 'lucide-react';
 
 const SettingsManager = () => {
   const [settings, setSettings] = useState<Record<string, string>>({});
@@ -59,23 +60,23 @@ const SettingsManager = () => {
         <div className="p-8 bg-white dark:bg-gray-900 rounded-[2.5rem] border border-gray-200 dark:border-white/10">
             <h3 className="text-xl font-black uppercase tracking-widest text-brand-green mb-8">Liens & Formulaires</h3>
             <div className="space-y-4">
-                <InputField icon="fa-ticket-alt" label="Inscription Participant" name="url_registration_attendee" value={settings.url_registration_attendee} onChange={handleInputChange} />
-                <InputField icon="fa-handshake" label="Devenir Partenaire" name="url_become_sponsor" value={settings.url_become_sponsor} onChange={handleInputChange} />
-                <InputField icon="fa-microphone" label="Proposer un Talk" name="url_become_speaker" value={settings.url_become_speaker} onChange={handleInputChange} />
+                <InputField icon={<Ticket />} label="Inscription Participant" name="url_registration_attendee" value={settings.url_registration_attendee} onChange={handleInputChange} />
+                <InputField icon={<Handshake />} label="Devenir Partenaire" name="url_become_sponsor" value={settings.url_become_sponsor} onChange={handleInputChange} />
+                <InputField icon={<Mic />} label="Proposer un Talk" name="url_become_speaker" value={settings.url_become_speaker} onChange={handleInputChange} />
             </div>
         </div>
 
         <div className="p-8 bg-white dark:bg-gray-900 rounded-[2.5rem] border border-gray-200 dark:border-white/10">
             <h3 className="text-xl font-black uppercase tracking-widest text-brand-green mb-8">Contact & Réseaux</h3>
             <div className="grid md:grid-cols-2 gap-6 mb-6">
-                <InputField icon="fa-envelope" label="Email de contact" name="contact_email" value={settings.contact_email} onChange={handleInputChange} />
-                <InputField icon="fa-phone" label="Téléphone" name="contact_phone" value={settings.contact_phone} onChange={handleInputChange} />
+                <InputField icon={<Mail />} label="Email de contact" name="contact_email" value={settings.contact_email} onChange={handleInputChange} />
+                <InputField icon={<Phone />} label="Téléphone" name="contact_phone" value={settings.contact_phone} onChange={handleInputChange} />
             </div>
             <div className="space-y-4">
-                <InputField icon="fab fa-whatsapp" label="Lien Communauté WhatsApp" name="whatsapp_community_url" value={settings.whatsapp_community_url} onChange={handleInputChange} />
-                <InputField icon="fab fa-linkedin" label="LinkedIn" name="social_linkedin_url" value={settings.social_linkedin_url} onChange={handleInputChange} />
-                <InputField icon="fab fa-twitter" label="Twitter" name="social_twitter_url" value={settings.social_twitter_url} onChange={handleInputChange} />
-                <InputField icon="fab fa-facebook" label="Facebook" name="social_facebook_url" value={settings.social_facebook_url} onChange={handleInputChange} />
+                <InputField icon={<MessageCircle />} label="Lien Communauté WhatsApp" name="whatsapp_community_url" value={settings.whatsapp_community_url} onChange={handleInputChange} />
+                <InputField icon={<Linkedin />} label="LinkedIn" name="social_linkedin_url" value={settings.social_linkedin_url} onChange={handleInputChange} />
+                <InputField icon={<Twitter />} label="Twitter" name="social_twitter_url" value={settings.social_twitter_url} onChange={handleInputChange} />
+                <InputField icon={<Facebook />} label="Facebook" name="social_facebook_url" value={settings.social_facebook_url} onChange={handleInputChange} />
             </div>
         </div>
 
@@ -89,11 +90,11 @@ const SettingsManager = () => {
   );
 };
 
-const InputField = ({ label, name, value, onChange, type = "text", icon } : {label:string, name:string, value:string, onChange:any, type?:string, icon?:string}) => (
+const InputField = ({ label, name, value, onChange, type = "text", icon } : {label:string, name:string, value:string, onChange:any, type?:string, icon?:React.ReactNode}) => (
     <div>
         <label className="block text-xs font-black uppercase text-gray-500 mb-2">{label}</label>
         <div className="relative">
-            {icon && <i className={`fas ${icon} absolute left-4 top-1/2 -translate-y-1/2 text-gray-400`}></i>}
+            {icon && <div className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400">{icon}</div>}
             <input type={type} name={name} value={value} onChange={onChange} className={`w-full p-4 border rounded-2xl dark:bg-gray-800 dark:border-gray-700 font-bold ${icon ? 'pl-12' : ''}`} />
         </div>
     </div>
